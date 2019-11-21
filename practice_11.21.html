@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="practice_11.21.js"></script>
+    </head>
+    <body>
+        <h2>My First JavaScirpt</h2>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.
+        </button>
+        <p id="demo"></p>
+
+        <h2>What Can JavaScript Do?</h2>
+        <p>JavaScript can change HTML attribute values.</p>
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image</p>
+        <button onclick="document.getElementById('myImage').src = 'bear.png'">bear Image</button>
+        <img id="myImage" src="pig.png" style="width: 100px;">
+        <button onclick="document.getElementById('myImage').src = 'pig.png'">pig Image</button>
+
+        <button onclick="document.getElementById('myImage').style.display = 'none'">사라져라</button>
+        <button onclick="document.getElementById('myImage').style.display = 'block'">나와라</button>
+
+        <div>
+            <button onclick="imgLink()">이미지 링크</button>
+            
+        </div>
+    </body>
+</html>
