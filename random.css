@@ -1,0 +1,43 @@
+html{
+  margin: 0;
+  padding: 0;
+}
+.random_title{
+  text-align: center;
+}
+#image_change{
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: 5px auto;
+  background-image: url("image/start.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+#random_result_text{
+  text-align: center;
+  font-size: 18px;
+}
+.number_box{
+  display: block;
+  width: 300px;
+  margin: 5px auto;
+  font-size: 14px;
+  text-align: center;
+}
+.number_submit{
+  display: block;
+  width: 300px;
+  margin: 5px auto;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+}
+.random_button, .image_infomation{
+  display: block;
+  width: 300px;
+  margin: 5px auto;
+  font-size: 18px;
+  border: none;
+}
