@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>chatting</title>
+        <link rel="stylesheet" href="chatting.css">
+        <script type="text/javascript" src="chatting.js"></script>
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <div class="chatting_content">
+            <div id="chatting_view_left"></div>
+            <input class="text_area_left" type="text">
+            <button class="text_send_left" onclick="textSendLeft()">전송하기</button>
+        </div>
+        <div class="chatting_content">
+            <div id="chatting_infomation"></div>
+        </div>
+        <div class="chatting_content">
+            <div id="chatting_view_right"></div>
+            <input class="text_area_right" type="text">
+            <button class="text_send_right" onclick="textSendRight()">전송하기</button>
+        </div>
+    </body>
+</html>
