@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <title>Game</title>
         <link rel="stylesheet" href="random.css">
-        <script src="//code.jquery.com/jquery-3.3.1.js"></script>
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="random.js"></script>
     </head>
@@ -12,9 +11,10 @@
         <h2 class="random_title">이미지바꾸기</h2>
         <img id="image_change">
         <p id="random_result_text">버튼을 눌러주세요</p>
-        <input class="number_box" type="text" placeholder="이미지번호를 입력해주세요(1~10)">
-        <input class="number_submit" type="submit" value="입력한 이미지보기">
+        <input id="number_box" type="text" placeholder="이미지번호를 입력해주세요(1~10)">
+        <button class="number_submit" onclick="imageGetInput()">입력한 이미지보기</button>
         <button class="random_button" onclick="randomResult()">이미지 랜덤으로보기</button>
-        <button class="image_infomation" onclick="imageInfomation()">이미지 정보보기</button>
+        <button id="image_infomation" onclick="imageInfo()">이미지 정보보기</button>
+        <button id="image_auto" onclick="imageAutoButton()">이미지 자동재생</button>
     </body>
 </html>
