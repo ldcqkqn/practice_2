@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>FOOD</title>
+        <link rel="stylesheet" href="food.css">
+        <script type="text/javascript" src="food.js"></script>
+    </head>
+    <body>
+        <h2 class="food_title">DONGFOOD</h2>
+        <div class="food_category">
+            <ul class="food_category_list">
+                <li class="food_type" onclick="list(1)">볶음</li>
+                <li class="food_type" onclick="list(2)">국밥</li>
+                <li class="food_type" onclick="list(3)">덮밥</li>
+                <li class="food_type" onclick="list(4)">면</li>
+                <li class="food_type" onclick="list(5)">분식</li>
+            </ul>
+        </div>
+        <div class="food_content">
+            <div class="food_category_menu">
+                <div class="food_category_menu_text">원하시는 메뉴를 눌러주세요</div>
+                <div class=food_category_menu_list_area>
+                    <ul id="food_list"></ul>
+                    <ul id="food_price"></ul>
+                </div>
+            </div>
+            <div class="food_category_select_menu">
+                <div class="food_category_select_menu_text">선택된 메뉴</div>
+                <div class="food_category_select_menu_list_area">
+                    <ul id="food_select_list"></ul>
+                    <ul id="food_select_price"></ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
