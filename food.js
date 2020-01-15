@@ -30,32 +30,32 @@ function fragmentMenuList(foodArray){
   var list = document.getElementById('food_list');
   list.innerHTML = '';
   var foodlist = foodArray;
-  var fragmentList = new DocumentFragment();
-
   foodlist.forEach(function(food){
-    var li = document.createElement('li');
+    var li = document.createElement("li");
     li.innerHTML = food;
-    fragmentList.appendChild(li);
-    console.log(fragmentList);
-  });
-  list.appendChild(fragmentList);
-  list.addEventListener("click", function(){
-    console.log(list);
+    li.onclick = function(){
+      selectFood(li);
+    }
+    list.appendChild(li);
   });
 
 }
+function selectFood(li){
+  var list = document.getElementById('food_list');
+  var selectList = document.getElementById('food_select_list');
+  selectList.appendChild(li);
+}
+
 function fragmentMenuPrice(price){
   var foodPrice = document.getElementById('food_price');
   foodPrice.innerHTML = '';
   var priceList = price;
-  var fragmentPrice = new DocumentFragment();
-
   priceList.forEach(function(price){
     var li = document.createElement('li');
     li.innerHTML = price;
-    fragmentPrice.appendChild(li)
+    foodPrice.appendChild(li);
   });
-  foodPrice.appendChild(fragmentPrice);
+
 }
 
 
