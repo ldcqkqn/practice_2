@@ -33,6 +33,7 @@ function fragmentMenuList(foodArray){
   foodlist.forEach(function(food){
     var li = document.createElement("li");
     li.innerHTML = food;
+    console.log(li.value);
     li.onclick = function(){
       selectFood(li);
     }
@@ -41,9 +42,10 @@ function fragmentMenuList(foodArray){
 
 }
 function selectFood(li){
-  var list = document.getElementById('food_list');
+  var copylist = document.getElementById('food_list');
+  var pastelist = copylist.cloneNode(true);
   var selectList = document.getElementById('food_select_list');
-  selectList.appendChild(li);
+  selectList.appendChild(pastelist);
 }
 
 function fragmentMenuPrice(price){
