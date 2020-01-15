@@ -55,7 +55,7 @@ body{
 }
 #food_list, #food_price, #food_select_list, #food_select_price{
   display: inline-block;
-  width: 46%;
+  width: 45%;
   margin: 5px 20px;
   list-style: none;
   font-size: 20px;
